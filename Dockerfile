@@ -7,6 +7,6 @@ ADD https://www.free-css.com/assets/files/free-css-templates/download/page271/bl
 WORKDIR /var/www/html
 RUN unzip blugoon.zip
 RUN cp -rvf 2116_blugoon/* .
-RUN rm -rvf 2blugoon.zip
+RUN rm -rvf blugoon.zip
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 EXPOSE 80
